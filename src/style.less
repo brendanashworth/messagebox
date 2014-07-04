@@ -1,0 +1,14 @@
+/* MessageBox */
+@transitionTime: .25s;
+@transitionElements: all;
+
+.alert {
+	.Transition(@transitionElements, @transitionTime);
+}
+
+.Transition(@elements: all, @time: .2s) {
+	transition: @elements @time;
+	-o-transition: @elements @time;
+	-moz-transition: @elements @time;
+	-webkit-transition: @elements @time;
+}
